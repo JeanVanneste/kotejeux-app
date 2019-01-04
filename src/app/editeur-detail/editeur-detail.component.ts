@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { Editeur } from '../editeur';
+import { EditeurService } from '../editeur.service';
 
 @Component({
   selector: 'app-editeur-detail',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Editeur } from '../editeur';
-import { EDITORS } from '../editeurs-test';
+import { EditeurService } from '../editeur.service'
 
 @Component({
   selector: 'app-editeurs',
@@ -10,23 +10,21 @@ import { EDITORS } from '../editeurs-test';
 })
 export class EditeursComponent implements OnInit {
 
-  editeur: Editeur = {
-    id: 4,
-    name: 'Lui-même',
-    nationalite: 'France',
-    creationYear: 1999
-  }
+  editeurs: Editeur[];
 
-  editeurs = EDITORS;
+  getEditeurs(): void {
+    this.editeurs = this.editeurService.getEditeurs();
+  }
 
   selectedEditeur: Editeur;
   onSelect(editeur: Editeur): void {
     this.selectedEditeur = editeur;
   }
 
-  constructor() { }
+  constructor(private editeurService: EditeurService) { }
 
   ngOnInit() {
+    this.getEditeurs();
   }
 
 }
