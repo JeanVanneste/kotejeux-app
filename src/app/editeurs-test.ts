@@ -4,5 +4,6 @@ export const EDITORS: Editeur[] = [
   { id: 1, name: "Asmodée", nationalite: "France", creationYear: 1986 },
   { id: 2, name: "Hasbro", nationalite: "USA", creationYear: 1923 },
   { id: 3, name: "Games Workshop", nationalite: "Angleterre", creationYear: 1975 },
-  { id: 4, name: 'Lui-même', nationalite: 'France', creationYear: 1999 }
+  { id: 4, name: 'Lui-même', nationalite: 'France', creationYear: 1999 },
+  { id: 5, name: "Edge Entertainment" , nationalite: "France", creationYear: 1999}
 ];
