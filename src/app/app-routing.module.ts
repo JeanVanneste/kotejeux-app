@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+
+import { EditeursComponent } from 'editeurs/editeurs.component';
+
+const routes: Routes = [
+  { path: 'editeurs', component: EditeursComponent }
+];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
   ]
 })
 export class AppRoutingModule { }
