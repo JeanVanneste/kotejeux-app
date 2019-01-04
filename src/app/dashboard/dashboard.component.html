@@ -1,6 +1,7 @@
 <h3>Top Éditeurs</h3>
 <div class="grid grid-pad">
-    <a *ngFor='let editeur of editeurs' class='col-1-4'>
+    <a *ngFor='let editeur of editeurs' class='col-1-4'
+        routerLink="/detail/{{editeur.id}}">
         <div class="module editeur">
             <h4>{{editeur.name}}</h4>
         </div>

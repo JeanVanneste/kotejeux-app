@@ -1,8 +1,8 @@
 <h3>Editeurs</h3>
 <ul class="editeurs">
-    <li *ngFor="let editeur of editeurs"
-        (click)="onSelect(editeur)"
-        [class.selected]="editeur === selectedEditeur">
-        <span class="badge">{{editeur.id}}</span>{{editeur.name}}
-    </li>
+  <li *ngFor="let editeur of editeurs">
+    <a routerLink="/detail/{{editeur.id}}">
+      <span class="badge">{{editeur.id}}</span>{{editeur.name}}
+    </a>
+  </li>
 </ul>

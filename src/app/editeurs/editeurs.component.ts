@@ -16,10 +16,6 @@ export class EditeursComponent implements OnInit {
     this.editeurService.getEditeurs()
         .subscribe(editeurs => this.editeurs = editeurs);
   }
-  selectedEditeur: Editeur;
-  onSelect(editeur: Editeur): void {
-    this.selectedEditeur = editeur;
-  }
 
   constructor(private editeurService: EditeurService) { }
 
