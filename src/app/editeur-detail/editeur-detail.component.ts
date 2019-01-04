@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Editeur } from '../editeur';
 
 @Component({
   selector: 'app-editeur-detail',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditeurDetailComponent implements OnInit {
 
+  @Input() editeur: Editeur;
   constructor() { }
 
   ngOnInit() {

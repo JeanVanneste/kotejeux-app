@@ -1,3 +1,11 @@
-<p>
-  editeur-detail works!
-</p>
+<div *ngIf="editeur">
+
+  <h2>{{editeur.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{editeur.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="editeur.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>

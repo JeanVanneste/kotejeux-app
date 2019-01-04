@@ -6,12 +6,4 @@
         <span class="badge">{{editeur.id}}</span>{{editeur.name}}
     </li>
 </ul>
-<div *ngIf="selectedEditeur">
-    <h3>{{selectedEditeur.name | uppercase}} Details</h3>
-    <div><span>id: </span>{{selectedEditeur.id}}</div>
-    <div>
-        <label>name:
-            <input [(ngModel)]="selectedEditeur.name" placeholder="name">
-        </label>
-    </div>
-</div>
+<app-editeur-detail [editeur]="selectedEditeur"></app-editeur-detail>
