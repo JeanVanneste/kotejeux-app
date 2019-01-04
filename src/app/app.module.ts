@@ -7,6 +7,7 @@ import { JeuxComponent } from './jeux/jeux.component';
 import { EditeursComponent } from './editeurs/editeurs.component';
 import { EditeurDetailComponent } from './editeur-detail/editeur-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MessagesComponent } from './messages/messages.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
