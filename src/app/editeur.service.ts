@@ -12,6 +12,12 @@ export class EditeurService {
 
   constructor(private messageService: MessageService) { }
 
+  getEditeur(id: number): Observable<Editeur> {
+    // TODO: send message _after_ fetching the editor
+    this.messageService.add(`EditeurServicer: fetched editeur id=${id}`);
+    return of(EDITORS.find(editeur => editeur.id === id));
+  }
+
   getEditeurs(): Observable<Editeur[]> {
     // TODO: send message _after_ fetching the editors
     this.messageService.add('EditeurService: fetched editeurs');
