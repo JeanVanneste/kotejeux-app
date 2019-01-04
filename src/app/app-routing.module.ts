@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { EditeursComponent } from 'editeurs/editeurs.component';
+import { EditeursComponent } from './editeurs/editeurs.component';
 
 const routes: Routes = [
   { path: 'editeurs', component: EditeursComponent }
@@ -10,6 +10,5 @@ const routes: Routes = [
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
-  ]
 })
 export class AppRoutingModule { }
