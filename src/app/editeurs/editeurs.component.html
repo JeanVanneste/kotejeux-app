@@ -1,5 +1,13 @@
-<h3>{{editeur.name | uppercase}} Details</h3>
-<div><span>ID : </span>{{editeur.id}}</div>
-<div><span>Nom : </span>{{editeur.name}}</div>
-<div><span>Nationalité : </span>{{editeur.nationalite}}</div>
-<div><span>Année de création : </span>{{editeur.creationYear}}</div>
+<h3>Editeurs</h3>
+<ul class="editeurs">
+    <li *ngFor="let editeur of editeurs" (click)="onSelect(editeur)">
+        <span class="badge">{{editeur.id}}</span> : {{editeur.name}}
+    </li>
+</ul>
+<h2>{{selectedEditeur.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedEditeur.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="selectedEditeur.name" placeholder="name">
+  </label>
+</div>

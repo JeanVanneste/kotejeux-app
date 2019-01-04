@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Editeur } from '../editeur';
+import { EDITORS } from '../editeurs-test';
 
 @Component({
   selector: 'app-editeurs',
@@ -14,6 +15,13 @@ export class EditeursComponent implements OnInit {
     name: 'Lui-même',
     nationalite: 'France',
     creationYear: 1999
+  }
+
+  editeurs = EDITORS;
+
+  selectedEditeur: Editeur;
+  onSelect(editeur: Editeur): void {
+    this.selectedEditeur = editeur;
   }
 
   constructor() { }
