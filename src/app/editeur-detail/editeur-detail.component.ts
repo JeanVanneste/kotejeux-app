@@ -29,4 +29,8 @@ export class EditeurDetailComponent implements OnInit {
         .subscribe(editeur => this.editeur = editeur);
   }
 
+  goBack(): void {
+    this.location.back();
+  }
+
 }
