@@ -3,7 +3,7 @@ import { Observable, of } from 'rxjs';
 
 import { Editeur } from './editeur';
 import { EDITORS } from './editeurs-test';
-import { MessageService } from '/message.service';
+import { MessageService } from './message.service';
 
 @Injectable({
   providedIn: 'root'
