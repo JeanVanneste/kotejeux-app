@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { JeuxComponent } from './jeux/jeux.component';
 import { EditeursComponent } from './editeurs/editeurs.component';
+import { EditeurDetailComponent } from './editeur-detail/editeur-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     JeuxComponent,
-    EditeursComponent
+    EditeursComponent,
+    EditeurDetailComponent
   ],
   imports: [
     BrowserModule,
