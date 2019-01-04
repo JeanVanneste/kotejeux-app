@@ -8,6 +8,7 @@ import { EditeursComponent } from './editeurs/editeurs.component';
 import { EditeurDetailComponent } from './editeur-detail/editeur-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     JeuxComponent,
     EditeursComponent,
     EditeurDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
