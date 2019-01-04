@@ -5,4 +5,4 @@ export const EDITORS: Editeur[] = [
   { id: 2, name: "Hasbro", nationalite: "USA", creationYear: 1923 },
   { id: 3, name: "Games Workshop", nationalite: "Angleterre", creationYear: 1975 },
   { id: 4, name: 'Lui-même', nationalite: 'France', creationYear: 1999 }
-]
+];
