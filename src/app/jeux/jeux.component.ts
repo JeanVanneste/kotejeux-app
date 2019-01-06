@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Jeu } from '../jeu';
+import { JeuService } from '../jeu.service';
 
 @Component({
   selector: 'app-jeux',
@@ -9,21 +10,17 @@ import { Jeu } from '../jeu';
 })
 export class JeuxComponent implements OnInit {
 
-  jeu: Jeu = {
-    id: 1,
-    editeurId: 4,
-    name: "Les Loups-garous de Thiercelieux",
-    author: "Phillipe des Pallières et Hervé Marly",
-    category: 'Ambiance',
-    gameDuration: 30,
-    playerMin: 6,
-    playerMax: 48,
-    description: "Les Loups-Garous de Thiercelieux est un jeu de société d'ambiance dans lequel chaque joueur incarne un villageois ou un loup-garou"
+  jeux: Jeu[];
+
+  getJeux(): void {
+    this.jeuService.getJeux()
+        .subscribe(jeux => this.jeux = jeux);
   }
 
-  constructor() { }
+  constructor(private jeuService: JeuService) { }
 
   ngOnInit() {
+    this.getJeux();
   }
 
 }

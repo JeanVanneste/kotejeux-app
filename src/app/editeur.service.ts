@@ -28,6 +28,6 @@ export class EditeurService {
 
   getEditeurs(): Observable<Editeur[]> {
     // TODO: send message _after_ fetching the editors
-    return this.http.get<Editeur[]>(this.editeursUrl);
+    return of(EDITORS);
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Editeur } from '../editeur';
-import { EditeurService } from '../editeur.service'
+import { EditeurService } from '../editeur.service';
 
 @Component({
   selector: 'app-editeurs',
