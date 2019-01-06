@@ -24,4 +24,15 @@ export const JEUX: Jeu[] = [
         playerMax: 10,
         description: "Le Uno est un jeu de cartes am\u00e9ricain cr\u00e9\u00e9 en 1971 par Merle Robbins et \u00e9dit\u00e9 par Mattel. Il est bas\u00e9 sur les r\u00e8gles du 8 am\u00e9ricain."
     },
+    {
+      id: 4,
+      editeurId: 7,
+      name: "Bang!",
+      author: "Emiliano Sciarra",
+      category: "Ambiance",
+      gameDuration: 30,
+      playerMin: 4,
+      playerMax: 7,
+      description: "La dynamique du jeu repose à la fois sur une part de hasard et une part de réflexion et d'observation pour deviner quel rôle endosse chaque joueur (seul le rôle du shérif est connu), quelles cartes un joueur a encore en main... Les parties ont une durée variable en fonction du nombre de joueurs et du niveau de connaissance des règles, soit 4 à 6 minutes à trois joueurs expérimentés et jusqu'à 45 min à sept avec des débutants. Les cartes circulent assez rapidement et les joueurs peuvent jouer autant de cartes qu'ils le souhaitent par tour (à quelques exceptions près, comme la limitation à une carte bang ! par tour)."
+    }
 ];
