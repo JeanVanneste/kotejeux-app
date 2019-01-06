@@ -1,13 +1,9 @@
 <h2>{{jeu.name | uppercase}} Details</h2>
 <div><span>id: </span>{{jeu.id}}</div>
 <div>
-  <label>name:
-    <input [(ngModel)]="jeu.name" placeholder="name"/>
-  </label>
+  <span>Nom : </span>{{jeu.name}}
 </div>
-<div><span>ID : </span>{{jeu.id}}</div>
 <div><span>ID éditeur : </span>{{jeu.editeurId}}</div>
-<div><span>Nom : </span>{{jeu.name}}</div>
 <div><span>Catégorie : </span>{{jeu.category}}</div>
 <div><span>Durée de jeu : </span>{{jeu.gameDuration}} minutes</div>
 <div>Pour {{jeu.playerMin}} à {{jeu.playerMax}} joueurs</div>
