@@ -1,7 +1,7 @@
 <h3>Editeurs</h3>
 <ul class="editeurs">
   <li *ngFor="let editeur of editeurs">
-    <a routerLink="/detail/{{editeur.id}}">
+    <a routerLink="/editeur/detail/{{editeur.id}}">
       <span class="badge">{{editeur.id}}</span>{{editeur.name}}
     </a>
   </li>

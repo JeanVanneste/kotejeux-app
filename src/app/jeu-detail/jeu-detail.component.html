@@ -5,4 +5,12 @@
     <input [(ngModel)]="jeu.name" placeholder="name"/>
   </label>
 </div>
+<div><span>ID : </span>{{jeu.id}}</div>
+<div><span>ID éditeur : </span>{{jeu.editeurId}}</div>
+<div><span>Nom : </span>{{jeu.name}}</div>
+<div><span>Catégorie : </span>{{jeu.category}}</div>
+<div><span>Durée de jeu : </span>{{jeu.gameDuration}} minutes</div>
+<div>Pour {{jeu.playerMin}} à {{jeu.playerMax}} joueurs</div>
+<div><span>Description : </span>{{jeu.description}}</div>
+
 <button (click)="goBack()">go back</button>

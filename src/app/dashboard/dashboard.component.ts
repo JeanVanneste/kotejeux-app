@@ -16,7 +16,8 @@ export class DashboardComponent implements OnInit {
 
   constructor(
     private editeurService: EditeurService,
-    private jeuService: JeuService) { }
+    private jeuService: JeuService
+  ) { }
 
   ngOnInit() {
     this.getEditeurs();

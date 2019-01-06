@@ -1,8 +1,8 @@
-<h3>{{jeu.name | uppercase}} Details</h3>
-<div><span>ID : </span>{{jeu.id}}</div>
-<div><span>ID éditeur : </span>{{jeu.editeurId}}</div>
-<div><span>Nom : </span>{{jeu.name}}</div>
-<div><span>Catégorie : </span>{{jeu.category}}</div>
-<div><span>Durée de jeu : </span>{{jeu.gameDuration}} minutes</div>
-<div>Pour {{jeu.playerMin}} à {{jeu.playerMax}} joueurs</div>
-<div><span>Description : </span>{{jeu.description}}</div>
+<h3>Jeux</h3>
+<ul class="jeux">
+  <li *ngFor="let jeu of jeux">
+    <a routerLink="/jeu/detail/{{jeu.id}}">
+      <span class="badge">{{jeu.id}}</span>{{jeu.name}}
+    </a>
+  </li>
+</ul>
